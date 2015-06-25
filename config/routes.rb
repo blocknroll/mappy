@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
-  root 'application#hello'
+  root      'maps#index'
+  resources :maps, only: [:index]
 
 end
