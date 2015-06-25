@@ -9,6 +9,7 @@ gem 'turbolinks',   '2.3.0'
 gem 'jbuilder',     '2.2.3'
 gem 'sdoc',         '0.4.0', group: :doc
 gem 'hurley'
+gem 'figaro'
 
 group :development, :test do
   gem 'sqlite3',     '1.3.9'
@@ -16,6 +17,7 @@ group :development, :test do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'spring',      '1.1.3'
+  gem 'simplecov', :require => false, :group => :test
 end
 
 group :test do
