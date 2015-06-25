@@ -9,4 +9,3 @@ class MapsControllerTest < ActionController::TestCase
   end
 
 end
-  

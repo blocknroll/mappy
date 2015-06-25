@@ -16,33 +16,31 @@ width: 100%;
   top: 140px;
 }
 
-
 .leaflet-container {
-    font-family: $heading-font-family;
-    font-size: 1.0em;
+  font-family: $heading-font-family;
+  font-size: 1.0em;
 
-    h2 {
-      font-size: 1.2em;
-      font-weight: 700;
-      color: rgba(0, 0, 0, 0.7);
-      margin: 0px 0 0px 0;
-    }
+  h2 {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.7);
+    margin: 0px 0 0px 0;
+  }
 
-    h3 {
-      font-weight: 700;
-    }
+  h3 {
+    font-weight: 700;
+  }
 
-    hr {
-      margin-top: 10px;
-      margin-bottom: 10px;
-      border: 0;
-      border-top: 1px solid #eeeeee;
-    }
+  hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0;
+    border-top: 1px solid #eeeeee;
+  }
 
-    a:hover, {
-      color: black;
-    }
-
+  a:hover, {
+    color: black;
+  }
 }
 
 
@@ -51,8 +49,6 @@ width: 100%;
   border-radius: 9px;
   border: 3px dotted $primary-color;
   box-shadow: 0 1px 2px rgba(0,0,0,.1);
-
-
 }
 
 .leaflet-popup-content {
@@ -61,16 +57,10 @@ width: 100%;
   line-height: inherit;
   text-align: center;
 
-
-
     .btn-default {
       color: white;
       background-color: $primary-color;
       border-color: #ccc;
       margin: 10px 10px 5px 10px;
-
-
-}
-
-
+    }
 }
