@@ -1,0 +1,93 @@
+// NAVBAR ///////////////////////////////////////////////////////////////////
+
+.navbar  {
+  border: none;
+  border-radius: 0px;
+  min-height: 100px;
+  z-index: 2001;
+  background: rgba(0,0,0,0.0);
+
+
+  .navbar-brand {
+    // width: 224px;
+    // height: 50px;
+    margin: 11px 0px 0px 20px;
+    padding: 0px 0px 0px 0px;
+    color: white;
+    height: 77px;
+  }
+
+  .navbar-form {
+    margin: 0 0 0 0;
+
+    .form-group {
+      display: inline-block;
+      margin-bottom: 0;
+      vertical-align: top;
+    }
+  }
+
+  .navbar-collapse {
+    // margin: 15px 0 0 0;
+    padding: 8px 0 0 0;
+  }
+
+  // .nav {
+  //
+  //   }
+    .dropdown-menu {
+      margin-top: 5px;
+      background-color: black;
+      text-align: center;
+    }
+
+
+
+  li {
+    a {
+      padding: 6px 15px 6px 15px;
+    }
+
+    h2 {
+      color: white;
+      font-size: 1.0em;
+      margin: 12px 30px 10px 5px;
+    }
+
+    .img-circle {
+      // border-radius: 50%;
+      max-height: 37px;
+      border: none;
+    }
+
+    .img-thumbnail {
+      background-color: black;
+    }
+  }
+
+}
+
+.slogan{
+  margin-top: none;
+  padding-top: none;
+  margin-left: 80px;
+  color: white;
+}
+
+.navbar-nav .open .dropdown-menu {
+    // position: static;
+    // float: none;
+    // width: auto;
+    // margin: 0 10% 0 10%;
+    // background-color: transparent;
+    // border: 0;
+    // box-shadow: none;
+  }
+
+
+.btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+  margin: 10px 10px 10px 20px;
+}

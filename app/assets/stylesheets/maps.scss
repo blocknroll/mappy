@@ -1,3 +1,14 @@
-// Place all the styles related to the Maps controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+div#map {
+position: absolute;
+top: 0px;
+bottom: 0;
+width: 100%;
+}
+
+.leaflet-left {
+  left: 35px;
+}
+
+.leaflet-top {
+  top: 140px;
+}

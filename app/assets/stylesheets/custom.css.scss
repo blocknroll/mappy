@@ -1,0 +1,75 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+
+// COLORS ///////////////////////////////////////////////////////////////////
+$white: rgba(255,255,255,1);
+$white-trans: rgba(255,255,255,0.5);
+
+$black: rgba(0,0,0,1);
+$dark-gray: rgba(0,0,0,0.7);
+$med-gray: rgba(50,50,50,1);
+$light-gray: rgba(0,0,0,0.4);
+
+
+$primary-color:   rgba(243,142,25,1.0);   // orange
+$secondary-color: rgba(255,255,255,1.0);  // white
+
+
+
+
+
+
+// TYPOGRAPHY //////////////////////////////////////////////////////////////
+
+$heading-font-family: 'Josefin Sans', Arial, serif;
+$base-font-family:    'Josefin Sans', Arial, serif;
+
+
+h1, h2, h3 {
+  font-family: $heading-font-family;
+  text-align: center;
+}
+
+h1  {
+  font-size: 4em;
+  font-weight: 700;
+}
+
+h2  {
+  font-size: 3.5em;
+  font-weight: 300;
+  color: $dark-gray;
+  margin: 20px 0 10px 0;
+}
+
+h3  {
+  font-size: 2.5em;
+  font-weight: 300;
+  color: $light-gray;
+  margin: 0 0 20px 0;
+}
+
+p, ul  {
+  font-family: $base-font-family;
+  font-size: 1.4em;
+  font-weight: 300;
+  color: $med-gray;
+  margin: 1em 0 1em 0;
+}
+
+a, a:focus, a:hover  {
+  color: $black;
+}
+
+
+
+
+// EVENTS //////////////////////////////////////////////////////////////
+
+.event-box {
+  border: 1px solid black;
+  margin: 40px;
+  padding: 20px;
+}
