@@ -8,12 +8,19 @@ gem 'jquery-rails', '4.0.3'
 gem 'turbolinks',   '2.3.0'
 gem 'jbuilder',     '2.2.3'
 gem 'sdoc',         '0.4.0', group: :doc
+gem 'hurley'
 
 group :development, :test do
   gem 'sqlite3',     '1.3.9'
-  gem 'byebug',      '3.4.0'
-  gem 'web-console', '2.0.0.beta3'
+  gem 'pry'
+  gem 'better_errors'
+  gem 'binding_of_caller'
   gem 'spring',      '1.1.3'
+end
+
+group :test do
+  gem 'webmock'
+  gem 'vcr'
 end
 
 group :production do
