@@ -1,0 +1,5 @@
+<div id='map'></div>
+
+<%= content_tag "div", id: "map-data", data: { geojson: @mapdata, token: ENV["MAPBOX_TOKEN"]} do %>
+
+<% end %>
