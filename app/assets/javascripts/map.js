@@ -9,17 +9,6 @@ $(document).ready(function() {
   var popup       = L.popup();
   map.setView(home, 13);
 
-  // L.control.locate({
-  //     drawCircle: true,
-  //     setView: true,
-  //     locateOptions:{maxZoom:14}
-  // }).addTo(map);
-
-
-  // var geojsonData = $('#map-data').data('geojson')
-
-  // markerLayer.setGeoJSON(geojsonData);
-
 
 
   function createPoints(coordinates){
@@ -37,10 +26,6 @@ $(document).ready(function() {
     //   e.layer.closePopup();
     // });
 
-    // addRows(data)
-    // mapHighlight(data)
-    // addTags(popularHashes(data))
-
     markerLayer.setGeoJSON(data);
   });
 
@@ -48,16 +33,15 @@ $(document).ready(function() {
 
   function popUpAll(marker){
     // debugger
-    var popupContent = "<b>"          + marker.feature.properties.title +
-                       "</b><br>"     + marker.feature.properties.venue_name +
+    var popupContent =
+                       "<h2>"         + marker.feature.properties.title + "</h2>" +
+                       "<hr>"         +
+                       "<h3>"         + marker.feature.properties.start_time +
+                       "</h3>"        + marker.feature.properties.venue_name +
+                       "<br>"         + marker.feature.properties.venue_address +
+                      //  "<br>"         + marker.feature.properties.description +
                        "<br><a href=" + marker.feature.properties.url +
                        " class='btn btn-default' target='_blank'>details</a>"
-
-
-
-    // var popupContent = '<a target="_blank" class="popup" href="#"> </a>'
-    //                    + '<p> <img class="popup-pic" src="'
-    //                    + marker.feature.properties.url + '"/> </p>'
 
     // http://leafletjs.com/reference.html#popup
     marker.bindPopup(popupContent,{
@@ -115,37 +99,5 @@ function onMapClick(e){
   // Create points on page load
   createPoints();
 
-
-
-  // map.on('locationfound', function(e) {
-  //   map.setView(e.latlng, 16);
-  // });
-
-
-
-
-
-
-
-  // markerLayer.on('mouseover', function(e) {
-  //   var marker  = e.layer;
-  //   var popupContent = '<a target="_blank" class="popup" href="#"> </a>' +
-  //                     //  '<p> <img class="popup-pic" src="' + marker.feature.properties.thumbnail + '"/> <br>' +
-  //                                       marker.feature.properties.title + "<br>Title: " +
-  //                                       marker.feature.properties.venue_name + "<br>Venue: "
-  //                               '</p>'
-  //   // http://leafletjs.com/reference.html#popup
-  //   marker.bindPopup(popupContent,{
-  //       closeButton: false,
-  //       maxWidth: 220
-  //   });
-  //
-  //   marker.openPopup();
-  //
-  // });
-  //
-  // markerLayer.on('mouseout', function(e) {
-  //   e.layer.closePopup();
-  // });
 
 });
