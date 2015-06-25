@@ -28,9 +28,12 @@ class Event < OpenStruct
                       coordinates: [ event[:longitude], event[:latitude] ]
                     },
                     properties: {
-                      title:      event[:title],
-                      venue_name: event[:venue_name],
-                      url:        event[:url],
+                      title:         event[:title],
+                      start_time:    event[:start_time],
+                      venue_name:    event[:venue_name],
+                      venue_address: event[:venue_address],
+                      description:   event[:description],
+                      url:           event[:url],
                       :'marker-color' => '#F38E19',
                       :'marker-size' => 'small'
                     }

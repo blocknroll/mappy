@@ -48,8 +48,13 @@ $(document).ready(function() {
 
   function popUpAll(marker){
     // debugger
-    var popupContent = "<b>"          + marker.feature.properties.title +
-                       "</b><br>"     + marker.feature.properties.venue_name +
+    var popupContent =
+                       "<h2>"         + marker.feature.properties.title + "</h2>" +
+                       "<hr>"         +
+                       "<h3>"         + marker.feature.properties.start_time +
+                       "</h3>"        + marker.feature.properties.venue_name +
+                       "<br>"         + marker.feature.properties.venue_address +
+                      //  "<br>"         + marker.feature.properties.description +
                        "<br><a href=" + marker.feature.properties.url +
                        " class='btn btn-default' target='_blank'>details</a>"
 
